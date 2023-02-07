@@ -1,0 +1,2335 @@
+// PARÁMETROS GENERALES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// PARÁMETROS DEL NAVBAR
+.navContainer {
+  .navbar {
+    background-color: #0bacd4;
+    padding: 0;
+    img {
+      margin-left: 1.25em;
+    }
+    .collapse {
+      height: 3.75em;
+      .navbar-nav {
+        height: 100%;
+        .navEnlaces {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Rubik", sans-serif;
+          font-weight: bold;
+          font-size: 0.875em;
+          margin-right: 1.563em;
+          color: white !important;
+          width: 9.375rem;
+        }
+        .color1:hover {
+          background-color: #3288aa;
+        }
+        .color2:hover {
+          background-color: #f5b3cf;
+        }
+        .color3:hover {
+          background-color: #99c774;
+        }
+        .color4:hover {
+          background-color: #fbc795;
+        }
+        .color5:hover {
+          background-color: #b293c4;
+        }
+      }
+    }
+  }
+}
+
+// PARÁMETROS DE LA PRESENTACIÓN DE INICIO (HOME)
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15.625em 0 8.75em 9.375em;
+  background-image: url("../../media/foto_grupal.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .homeContainer__div {
+    background-color: #ffffff;
+    width: 9.375em;
+    height: 4.5em;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    .homeContainer__img {
+      width: 8.438em;
+      height: 4.563em;
+      z-index: 1;
+      position: relative;
+      top: -22px;
+    }
+  }
+  .homeContainer__title1 {
+    background-color: #ffffff;
+    width: 27.5em;
+    margin-bottom: 0.625em;
+  }
+  .homeContainer__title2 {
+    background-color: #ffffff;
+    width: 22.188em;
+    margin-bottom: 0.625em;
+  }
+  .homeContainer__title3 {
+    background-color: #ffffff;
+    width: 17.5em;
+    margin-bottom: 0.625em;
+  }
+  .homeContainer__title4 {
+    background-color: #ffffff;
+    width: 31.25em;
+    margin-bottom: 0.625em;
+  }
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #10acd3;
+    margin: 0;
+    padding-left: 0.625rem;
+  }
+}
+
+// PARÁMETROS DE LA SECCIÓN NOSOTROS (¿QUIENES SOMOS?)
+.nosotrosContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4;
+  .nosotros__titulo {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    h1 {
+      font-family: "Rubik", sans-serif;
+      font-weight: bold;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 2.188rem;
+    }
+    p {
+      font-family: "Karla", sans-serif;
+      font-size: 1.125em;
+      text-align: center;
+      padding: 0 11.875rem 0 11.875rem;
+      margin-bottom: 1.25em;
+    }
+  }
+  #carousel {
+    padding: 0 5em;
+    margin-bottom: 5em;
+    .cartasNosotros {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 3.125em;
+      .carta {
+        width: 15.625em;
+        height: 19.063em;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        .card-body {
+          padding: 0;
+          img {
+            border-radius: 20px 20px 0 0;
+          }
+          h5 {
+            font-family: "Rubik", sans-serif;
+            font-weight: bold;
+            font-size: 0.875em;
+            background-color: #ffffff;
+            color: #3288aa;
+            padding: 1em;
+            line-height: 1em;
+            border-radius: 20px;
+
+            /* para superponer el epígrafe sobre la foto */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: calc(100% - 4.5em);
+
+            transition: all 0.6s ease-out;
+            span {
+              font-family: "Karla", sans-serif;
+              font-size: 0.875rem;
+            }
+            p {
+              font-family: "Karla", sans-serif;
+              font-size: 0.875rem;
+              display: block;
+              margin-top: 2em;
+              text-transform: none;
+            }
+          }
+        }
+      }
+      .carta:hover h5 {
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 0;
+        transition: all 0.6s ease;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+    a {
+      width: 5em;
+    }
+  }
+}
+
+// PARÁMETROS DE LA SECCIÓN TALLERES
+.talleresContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5em;
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 2.188rem;
+    color: #0bacd4;
+  }
+  .cartasTalleres1,
+  .cartasTalleres2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.875em;
+    .carta {
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      .card-body {
+        padding-top: 1.875em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          height: 100%;
+        }
+        img {
+          width: 4.375em;
+          height: 4.375em;
+          margin-bottom: 1.25em;
+        }
+        h5 {
+          font-family: "Rubik", sans-serif;
+          font-weight: bold;
+          font-size: 1.25em;
+          margin-bottom: 1.25em;
+        }
+        p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em;
+        }
+      }
+      width: 14.375em;
+      height: 21.25em;
+      background-color: #0bacd4;
+      border-radius: 20px;
+      text-align: center;
+      flex-direction: row;
+      align-items: center;
+    }
+    .color1:hover {
+      background-color: #3288aa;
+      border-radius: 20px;
+    }
+    .color2:hover {
+      background-color: #f5b3cf;
+      border-radius: 20px;
+    }
+    .color3:hover {
+      background-color: #99c774;
+      border-radius: 20px;
+    }
+    .color4:hover {
+      background-color: #fbc795;
+      border-radius: 20px;
+    }
+    .color5:hover {
+      background-color: #b293c4;
+      border-radius: 20px;
+    }
+  }
+  .cartasTalleres3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+    padding: 0 16.25em 0 16.25em;
+    .carta {
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      .card-body {
+        padding-top: 1.875em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          height: 100%;
+        }
+        img {
+          width: 4.375em;
+          height: 4.375em;
+          margin-bottom: 1.25em;
+        }
+        h5 {
+          font-family: "Rubik", sans-serif;
+          font-weight: bold;
+          font-size: 1.25em;
+          margin-bottom: 1.25em;
+        }
+        p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em;
+        }
+      }
+      width: 14.375em;
+      height: 21.25em;
+      background-color: #0bacd4;
+      color: #ffffff;
+      border-radius: 20px;
+      text-align: center;
+      flex-direction: row;
+      align-items: center;
+    }
+    .color1:hover {
+      background-color: #3288aa;
+      border-radius: 20px;
+    }
+    .color2:hover {
+      background-color: #f5b3cf;
+      border-radius: 20px;
+    }
+    .color3:hover {
+      background-color: #99c774;
+      border-radius: 20px;
+    }
+  }
+}
+// ESTILOS PARA EL POPUP
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+#popupBody {
+  text-align: center;
+  width: 40%;
+  height: 60%;
+  padding: 2% 6%;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #ffffff;
+  position: relative;
+  margin: 10% 30%;
+  background-color: #3288aa;
+  img {
+    width: 4.375em;
+    height: 4.375em;
+    margin-bottom: 0.625rem;
+  }
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  p {
+    font-family: "Karla", sans-serif;
+    font-size: 0.875em;
+  }
+}
+#cerrar {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 1.875em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 200ms;
+}
+
+// PARÁMETROS DE LA SECCIÓN REDES SOCIALES
+.redesContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4;
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.813rem;
+    color: #ffffff;
+  }
+  .iconosRedes {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 21.875em;
+    margin-bottom: 5em;
+    .card {
+      border-radius: 20px;
+      height: 3.125em;
+      width: 15.625em;
+      .card-body {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          p {
+            font-family: "Rubik", sans-serif;
+            font-weight: bold;
+            font-size: 0.875em;
+            color: #0bacd4;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .card:hover {
+      background-color: #99c774;
+      .instaIcon {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #ffffff 0%,
+          #ffffff 5%,
+          #ffffff 45%,
+          #ffffff 60%,
+          #ffffff 90%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .parrafoRedes {
+        color: #ffffff;
+      }
+    }
+    .instaIcon {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  #carousel2 {
+    padding: 0 5em;
+    margin-bottom: 5em;
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .gal1,
+      .gal3 {
+        display: flex;
+        align-items: center;
+        width: 15em;
+        height: 16.25em;
+      }
+      .gal2,
+      .gal4,
+      .gal5,
+      .gal6 {
+        display: flex;
+        align-items: center;
+        width: 20.625em;
+        height: 20.625em;
+      }
+      img {
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      }
+      #popupGal1,
+      #popupGal3 {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding: 2% 34%;
+        margin: 4% 0;
+        img {
+          width: 26.25em;
+          height: 32.5em;
+        }
+      }
+      #popupGal2,
+      #popupGal4,
+      #popupGal5,
+      #popupGal6 {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding: 2.5% 28%;
+        margin: 4% 0;
+        img {
+          width: 37.5em;
+          height: 30em;
+        }
+      }
+    }
+  }
+}
+
+// PARÁMETROS DE LA SECCIÓN CONTACTO
+.contactoContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 5em;
+  .formContainer {
+    width: 40.625em;
+    padding-left: 9.375em;
+    color: #0bacd4;
+    margin-bottom: 3.125em;
+    .titulos {
+      i {
+        margin-bottom: 1.25rem;
+      }
+      h1 {
+        margin-bottom: 0.938rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        font-size: 2.5em;
+      }
+      h5 {
+        margin-bottom: 1.875rem;
+        font-family: "Rubik", sans-serif;
+        font-size: 2.188em;
+      }
+    }
+    .mb-4 {
+      display: flex;
+      justify-content: center;
+      ::-moz-placeholder {
+        color: #0bacd4;
+        opacity: 1;
+      }
+      .form-control {
+        border: 1px solid #0bacd4;
+        font-family: "Karla", sans-serif;
+        font-size: 0.875em;
+      }
+      button {
+        background-color: #0bacd4;
+        border: 1px solid #0bacd4;
+        width: 6.25em;
+        font-family: "Rubik", sans-serif;
+        font-size: 0.875em;
+        font-weight: bold;
+        margin-right: 1.25em;
+      }
+      button:hover {
+        background-color: #fbc795;
+        border: 1px solid #fbc795;
+      }
+    }
+  }
+  .informContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 34.375em;
+    position: relative;
+    .cajaVacia {
+      z-index: 1;
+      position: absolute;
+      top: 60px;
+      width: 96%;
+      height: 20em;
+      background-color: #fbc795;
+      border-radius: 20px 0 0 20px;
+    }
+    .infoCaja {
+      z-index: 2;
+      position: absolute;
+      width: 90%;
+      height: 20.625em;
+      background-color: #0bacd4;
+      color: #ffffff;
+      border-radius: 20px 0 0 20px;
+      padding: 1.25em 0 0 4.375em;
+      .titulo {
+        margin-bottom: 1.875rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        font-size: 2.5em;
+      }
+      div {
+        display: flex;
+        margin-bottom: 0.938em;
+        i {
+          padding: 0.25em 0 0 0.625em;
+        }
+        p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em;
+          margin-left: 0.938em;
+        }
+      }
+    }
+  }
+}
+
+// PARÁMETROS DE LA SECCIÓN DONACIONES
+.donacionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4;
+  h1,
+  h4 {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 0.625em;
+    color: #ffffff;
+  }
+  h4 {
+    margin-bottom: 4.375rem;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.875em;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    padding: 0 15.625rem;
+  }
+  .cardDonaciones {
+    height: 15.625em;
+    width: 43.75em;
+    background-color: #b293c4;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+    h3 {
+      font-family: "Rubik", sans-serif;
+      font-size: 1.875em;
+      margin: 0;
+    }
+  }
+}
+
+// PARÁMETROS DEL FOOTER
+.footerContainer {
+  background-color: #3288aa;
+  height: 12.5em;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  .foot1 {
+    width: 43.75em;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+      font-size: 0.875em;
+    }
+    i {
+      color: #ffffff;
+      margin-right: 0.625em;
+    }
+  }
+  .infoFoot {
+    padding-right: 3.75em;
+    p {
+      font-family: "Karla", sans-serif;
+      font-size: 0.875em;
+      margin: 0;
+    }
+  }
+}
+
+// RESPONSIVE MEDIA QUERYS
+@media screen and (max-width: 575px) {
+  // PARÁMETROS DEL NAVBAR
+  .navContainer {
+    .navbar {
+      img {
+        margin: 0 0 0.438em 0.313em;
+        width: 2.5em;
+        height: 1.25em;
+      }
+      .collapse {
+        height: 100%;
+        .navbar-nav {
+          height: 100%;
+          .navEnlaces {
+            justify-content: flex-start;
+            padding-left: 0.313em;
+            font-size: 0.75em;
+            width: 5.625rem;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA PRESENTACIÓN DE INICIO (HOME)
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_575.jpg");
+    height: 100%;
+    padding: 8.125em 0 3.75em 3.125em;
+    .homeContainer__div {
+      width: 2.344em;
+      height: 1.125em;
+      padding: 0.156em;
+      margin-bottom: 0.156em;
+      .homeContainer__img {
+        width: 2.109em;
+        height: 1.141em;
+        top: -10px;
+      }
+    }
+    .homeContainer__title1 {
+      width: 10.313em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title2 {
+      width: 8.125em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title3 {
+      width: 6.563em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title4 {
+      width: 11.875em;
+      margin-bottom: 0.208em;
+    }
+    h2 {
+      font-size: 0.938em;
+      padding-left: 0.208em;
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN NOSOTROS (¿QUIENES SOMOS?)
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    .nosotros__titulo {
+      h1 {
+        font-size: 1.25em;
+        margin-bottom: 0.729em;
+      }
+      p {
+        font-size: 0.813em;
+        padding: 0 2.5rem;
+        margin-bottom: 1.25em;
+      }
+    }
+    #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em;
+      .cartasNosotros {
+        margin-top: 1.25em;
+        .carta {
+          width: 9.731em;
+          height: 11.875em;
+          border-radius: 10px;
+          .card-body {
+            padding: 0;
+            img {
+              border-radius: 10px 10px 0 0;
+            }
+            h5 {
+              font-size: 0.75em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 3.8em);
+
+              transition: all 0.6s ease-out;
+              span {
+                font-size: 0.75rem;
+              }
+              p {
+                font-size: 0.75rem;
+                margin-top: 1.2em;
+              }
+            }
+          }
+        }
+        .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.9);
+          top: 0;
+          transition: all 0.6s ease;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+      a {
+        width: 4.375em;
+        span {
+          width: 0.938em;
+          height: 0.938em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN TALLERES
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em;
+    }
+    .cartasTalleres1,
+    .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 0.75em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px;
+      }
+      .color4:hover {
+        background-color: #fbc795;
+        border-radius: 10px;
+      }
+      .color5:hover {
+        background-color: #b293c4;
+        border-radius: 10px;
+      }
+    }
+    .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap;
+      .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 0.75em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px;
+      }
+    }
+  }
+  // ESTILOS PARA EL POPUP
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody {
+    text-align: center;
+    width: 80%;
+    height: 55%;
+    padding: 4% 6%;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 20% 10%;
+    background-color: #3288aa;
+    img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.5em;
+    }
+    h5 {
+      font-size: 0.938em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 0.75em;
+      margin-bottom: 0.625em;
+    }
+  }
+  #cerrar {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 0.938em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms;
+  }
+
+  // PARÁMETROS DE LA SECCIÓN REDES SOCIALES
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 1.25em;
+    }
+    .iconosRedes {
+      padding: 0 0.625em;
+      margin-bottom: 1.25em;
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        border-radius: 20px;
+        height: 2.188em;
+        width: 11.875em;
+        margin-bottom: 0.938em;
+        .card-body {
+          a {
+            width: 100%;
+            height: 100%;
+            .fa-2x {
+              font-size: 1.2em;
+            }
+            p {
+              font-size: 0.75em;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .card:hover {
+        background-color: #99c774;
+        .instaIcon {
+          background: radial-gradient(
+            circle at 30% 107%,
+            #ffffff 0%,
+            #ffffff 5%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffffff 90%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .parrafoRedes {
+          color: #ffffff;
+        }
+      }
+      .instaIcon {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    #carousel2 {
+      .row {
+        .gal1,
+        .gal3 {
+          width: 15em;
+          height: 16.25em;
+        }
+        .gal2,
+        .gal4,
+        .gal5,
+        .gal6 {
+          width: 18.75em;
+          height: 12.5em;
+        }
+        img {
+          width: 100%;
+        }
+        #popupGal1,
+        #popupGal3 {
+          padding: 6% 8.5%;
+          margin: 11% 0;
+          img {
+            width: 18.75em;
+            height: 25em;
+          }
+        }
+        #popupGal2,
+        #popupGal4,
+        #popupGal5,
+        #popupGal6 {
+          padding: 8% 7%;
+          margin: 11% 0;
+          img {
+            width: 20em;
+            height: 17.5em;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 4.375em;
+        span {
+          width: 0.938em;
+          height: 0.938em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN CONTACTO
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em;
+    .formContainer {
+      width: 10.938em;
+      padding-left: 1.25em;
+      .titulos {
+        i {
+          margin-bottom: 0.625em;
+          font-size: 1.5em;
+        }
+        h1 {
+          margin-bottom: 0.313em;
+          font-size: 1.25em;
+        }
+        h5 {
+          margin-bottom: 0.625em;
+          font-size: 0.875em;
+        }
+      }
+      .mb-4 {
+        .form-control {
+          font-size: 0.75em;
+        }
+        button {
+          width: 3.125rem;
+          font-size: 0.625em;
+          margin-right: 0.625em;
+          padding: 0.3em;
+        }
+        button:hover {
+          background-color: #fbc795;
+          border: 1px solid #fbc795;
+        }
+      }
+    }
+    .informContainer {
+      width: 10.625em;
+      .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 10px 0 0 10px;
+      }
+      .infoCaja {
+        top: 27px;
+        width: 96%;
+        height: 13.125em;
+        border-radius: 10px 0 0 10px;
+        padding: 0.938em 0 0 0.625em;
+        .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.25em;
+        }
+        div {
+          margin-bottom: 0.313em;
+          i {
+            padding: 0.125rem 0 0 0.313rem;
+            font-size: 0.7em;
+          }
+          p {
+            font-size: 0.75em;
+            margin-left: 0.313em;
+            margin-bottom: 0.313em;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN DONACIONES
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.625em;
+    }
+    h2 {
+      font-size: 0.938em;
+      margin-bottom: 0.938em;
+      padding: 0 2.5em;
+    }
+    .cardDonaciones {
+      height: 6.25em;
+      width: 15.625em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em;
+      h3 {
+        font-size: 0.75em;
+        margin: 0;
+      }
+    }
+    h4 {
+      font-size: 1.25em;
+      margin-bottom: 1.875em;
+    }
+  }
+
+  // PARÁMETROS DEL FOOTER
+  .footerContainer {
+    height: 7.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.625em;
+      div {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 2.5em;
+          height: 1.25em;
+        }
+      }
+      a {
+        font-size: 0.75em;
+      }
+      i {
+        font-size: 1.2em;
+        margin-right: 0.313em;
+      }
+    }
+    .infoFoot {
+      padding-right: 0;
+      p {
+        font-size: 0.75em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  // PARÁMETROS DEL NAVBAR
+  .navContainer {
+    .navbar {
+      img {
+        margin: 0 0 0.438em 0.313em;
+        width: 2.5em;
+        height: 1.25em;
+      }
+      .collapse {
+        height: 100%;
+        .navbar-nav {
+          height: 100%;
+          .navEnlaces {
+            justify-content: flex-start;
+            padding-left: 0.313em;
+            font-size: 0.75em;
+            width: 5.625rem;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA PRESENTACIÓN DE INICIO (HOME)
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_575.jpg");
+    height: 100%;
+    padding: 8.125em 0 3.75em 3.125em;
+    .homeContainer__div {
+      width: 2.344em;
+      height: 1.125em;
+      padding: 0.156em;
+      margin-bottom: 0.156em;
+      .homeContainer__img {
+        width: 2.109em;
+        height: 1.141em;
+        top: -10px;
+      }
+    }
+    .homeContainer__title1 {
+      width: 10.313em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title2 {
+      width: 8.125em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title3 {
+      width: 6.563em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title4 {
+      width: 11.875em;
+      margin-bottom: 0.208em;
+    }
+    h2 {
+      font-size: 0.938em;
+      padding-left: 0.208em;
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN NOSOTROS (¿QUIENES SOMOS?)
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    .nosotros__titulo {
+      h1 {
+        font-size: 1.25em;
+        margin-bottom: 0.729em;
+      }
+      p {
+        font-size: 0.813em;
+        padding: 0 2.5rem;
+        margin-bottom: 1.25em;
+      }
+    }
+    #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em;
+      .cartasNosotros {
+        margin-top: 1.25em;
+        .carta {
+          width: 9.731em;
+          height: 11.875em;
+          border-radius: 10px;
+          .card-body {
+            padding: 0;
+            img {
+              border-radius: 10px 10px 0 0;
+            }
+            h5 {
+              font-size: 0.75em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 3.8em);
+
+              transition: all 0.6s ease-out;
+              span {
+                font-size: 0.75rem;
+              }
+              p {
+                font-size: 0.75rem;
+                margin-top: 1.2em;
+              }
+            }
+          }
+        }
+        .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.9);
+          top: 0;
+          transition: all 0.6s ease;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+      a {
+        width: 4.375em;
+        span {
+          width: 0.938em;
+          height: 0.938em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN TALLERES
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em;
+    }
+    .cartasTalleres1,
+    .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 0.75em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px;
+      }
+      .color4:hover {
+        background-color: #fbc795;
+        border-radius: 10px;
+      }
+      .color5:hover {
+        background-color: #b293c4;
+        border-radius: 10px;
+      }
+    }
+    .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap;
+      .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 0.75em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px;
+      }
+    }
+  }
+  // ESTILOS PARA EL POPUP
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody {
+    text-align: center;
+    width: 80%;
+    height: 55%;
+    padding: 4% 6%;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 20% 10%;
+    background-color: #3288aa;
+    img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.5em;
+    }
+    h5 {
+      font-size: 0.938em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 0.75em;
+      margin-bottom: 0.625em;
+    }
+  }
+  #cerrar {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 0.938em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms;
+  }
+
+  // PARÁMETROS DE LA SECCIÓN REDES SOCIALES
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 1.25em;
+    }
+    .iconosRedes {
+      padding: 0 0.625em;
+      margin-bottom: 1.25em;
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        border-radius: 20px;
+        height: 2.188em;
+        width: 11.875em;
+        margin-bottom: 0.938em;
+        .card-body {
+          a {
+            width: 100%;
+            height: 100%;
+            .fa-2x {
+              font-size: 1.2em;
+            }
+            p {
+              font-size: 0.75em;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .card:hover {
+        background-color: #99c774;
+        .instaIcon {
+          background: radial-gradient(
+            circle at 30% 107%,
+            #ffffff 0%,
+            #ffffff 5%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffffff 90%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .parrafoRedes {
+          color: #ffffff;
+        }
+      }
+      .instaIcon {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    #carousel2 {
+      .row {
+        .gal1,
+        .gal3 {
+          width: 15em;
+          height: 16.25em;
+        }
+        .gal2,
+        .gal4,
+        .gal5,
+        .gal6 {
+          width: 18.75em;
+          height: 12.5em;
+        }
+        img {
+          width: 100%;
+        }
+        #popupGal1,
+        #popupGal3 {
+          padding: 6% 8.5%;
+          margin: 11% 0;
+          img {
+            width: 18.75em;
+            height: 25em;
+          }
+        }
+        #popupGal2,
+        #popupGal4,
+        #popupGal5,
+        #popupGal6 {
+          padding: 8% 7%;
+          margin: 11% 0;
+          img {
+            width: 20em;
+            height: 17.5em;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 4.375em;
+        span {
+          width: 0.938em;
+          height: 0.938em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN CONTACTO
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em;
+    .formContainer {
+      width: 10.938em;
+      padding-left: 1.25em;
+      .titulos {
+        i {
+          margin-bottom: 0.625em;
+          font-size: 1.5em;
+        }
+        h1 {
+          margin-bottom: 0.313em;
+          font-size: 1.25em;
+        }
+        h5 {
+          margin-bottom: 0.625em;
+          font-size: 0.875em;
+        }
+      }
+      .mb-4 {
+        .form-control {
+          font-size: 0.75em;
+        }
+        button {
+          width: 3.125rem;
+          font-size: 0.625em;
+          margin-right: 0.625em;
+          padding: 0.3em;
+        }
+        button:hover {
+          background-color: #fbc795;
+          border: 1px solid #fbc795;
+        }
+      }
+    }
+    .informContainer {
+      width: 10.625em;
+      .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 10px 0 0 10px;
+      }
+      .infoCaja {
+        top: 27px;
+        width: 96%;
+        height: 13.125em;
+        border-radius: 10px 0 0 10px;
+        padding: 0.938em 0 0 0.625em;
+        .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.25em;
+        }
+        div {
+          margin-bottom: 0.313em;
+          i {
+            padding: 0.125rem 0 0 0.313rem;
+            font-size: 0.7em;
+          }
+          p {
+            font-size: 0.75em;
+            margin-left: 0.313em;
+            margin-bottom: 0.313em;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN DONACIONES
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.625em;
+    }
+    h2 {
+      font-size: 0.938em;
+      margin-bottom: 0.938em;
+      padding: 0 2.5em;
+    }
+    .cardDonaciones {
+      height: 6.25em;
+      width: 15.625em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em;
+      h3 {
+        font-size: 0.75em;
+        margin: 0;
+      }
+    }
+    h4 {
+      font-size: 1.25em;
+      margin-bottom: 1.875em;
+    }
+  }
+
+  // PARÁMETROS DEL FOOTER
+  .footerContainer {
+    height: 7.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.625em;
+      div {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 2.5em;
+          height: 1.25em;
+        }
+      }
+      a {
+        font-size: 0.75em;
+      }
+      i {
+        font-size: 1.2em;
+        margin-right: 0.313em;
+      }
+    }
+    .infoFoot {
+      padding-right: 0;
+      p {
+        font-size: 0.75em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  // PARÁMETROS DEL NAVBAR
+  .navContainer {
+    .navbar {
+      img {
+        margin: 0 0 0.438em 0.313em;
+        width: 3.75rem;
+        height: 1.875rem;
+      }
+      .collapse {
+        height: 100%;
+        .navbar-nav {
+          height: 100%;
+          .navEnlaces {
+            justify-content: flex-start;
+            padding-left: 0.313em;
+            font-size: 0.813em;
+            width: 7.813em;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA PRESENTACIÓN DE INICIO (HOME)
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_991.jpg");
+    height: 100%;
+    padding: 11.25em 0 2.5em 5.625em;
+    .homeContainer__div {
+      width: 5.313em;
+      height: 2.625em;
+      padding: 0.156em;
+      margin-bottom: 0.156em;
+      .homeContainer__img {
+        width: 5em;
+        height: 2.5em;
+        top: -7px;
+      }
+    }
+    h2 {
+      font-size: 1.875em;
+      padding-left: 0.208rem;
+    }
+    .homeContainer__title1 {
+      width: 20.313em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title2 {
+      width: 16.25em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title3 {
+      width: 12.813em;
+      margin-bottom: 0.208em;
+    }
+    .homeContainer__title4 {
+      width: 23.125em;
+      margin-bottom: 0.208em;
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN NOSOTROS (¿QUIENES SOMOS?)
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    .nosotros__titulo {
+      h1 {
+        font-size: 1.875em;
+        margin-bottom: 1.25rem;
+      }
+      p {
+        font-size: 0.938em;
+        padding: 0 5.625em;
+        margin-bottom: 1.25em;
+      }
+    }
+    #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em;
+      .cartasNosotros {
+        margin-top: 1.25em;
+        .carta {
+          width: 12.813em;
+          height: 15.625em;
+          border-radius: 20px;
+          .card-body {
+            padding: 0;
+            img {
+              border-radius: 20px 20px 0 0;
+            }
+            h5 {
+              font-size: 0.813em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 4em);
+
+              transition: all 0.6s ease-out;
+              span {
+                font-size: 0.813rem;
+              }
+              p {
+                font-size: 0.813rem;
+                margin-top: 1.2em;
+              }
+            }
+          }
+        }
+        .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.7);
+          top: 0;
+          transition: all 0.6s ease;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+      a {
+        width: 2.5em;
+        span {
+          width: 1.563em;
+          height: 1.563em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN TALLERES
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.875em;
+      margin-bottom: 1.25rem;
+    }
+    .cartasTalleres1,
+    .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      .carta {
+        width: 12.25em;
+        height: 18.125em;
+        border-radius: 20px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em;
+          }
+          h5 {
+            font-size: 1.094em;
+            margin-bottom: 0.5em;
+          }
+          p {
+            font-size: 0.813em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 20px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 20px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 20px;
+      }
+      .color4:hover {
+        background-color: #fbc795;
+        border-radius: 20px;
+      }
+      .color5:hover {
+        background-color: #b293c4;
+        border-radius: 20px;
+      }
+    }
+    .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap;
+      .carta {
+        width: 12.25em;
+        height: 18.125em;
+        border-radius: 20px;
+        margin-bottom: 0.938em;
+        .card-body {
+          padding: 0.625em;
+          height: 100%;
+          a {
+            height: 100%;
+          }
+          img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.625em;
+          }
+          h5 {
+            font-size: 1.094em;
+            margin-bottom: 0.625em;
+          }
+          p {
+            font-size: 0.813em;
+          }
+        }
+      }
+      .color1:hover {
+        background-color: #3288aa;
+        border-radius: 20px;
+      }
+      .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 20px;
+      }
+      .color3:hover {
+        background-color: #99c774;
+        border-radius: 20px;
+      }
+    }
+  }
+  // ESTILOS PARA EL POPUP
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody {
+    text-align: center;
+    width: 50%;
+    height: 28%;
+    padding: 5% 6%;
+    border-radius: 20px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 10% 25%;
+    background-color: #3288aa;
+    img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.625em;
+    }
+    h2 {
+      font-size: 1.094em;
+    }
+    p {
+      font-size: 0.813em;
+      margin-bottom: 0.625em;
+    }
+  }
+  #cerrar {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.063em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms;
+  }
+
+  // PARÁMETROS DE LA SECCIÓN REDES SOCIALES
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.875em;
+      margin-bottom: 1.563em;
+    }
+    .iconosRedes {
+      padding: 0 6.25em;
+      margin-bottom: 2.5em;
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        border-radius: 20px;
+        height: 2.5em;
+        width: 13.125em;
+        margin-bottom: 0.938em;
+        .card-body {
+          a {
+            width: 100%;
+            height: 100%;
+            p {
+              font-size: 0.813em;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .card:hover {
+        background-color: #99c774;
+        .instaIcon {
+          background: radial-gradient(
+            circle at 30% 107%,
+            #ffffff 0%,
+            #ffffff 5%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffffff 90%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .parrafoRedes {
+          color: #ffffff;
+        }
+      }
+      .instaIcon {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    #carousel2 {
+      .row {
+        .gal1,
+        .gal3 {
+          width: 15em;
+          height: 16.25em;
+        }
+        .gal2,
+        .gal4,
+        .gal5,
+        .gal6 {
+          width: 18.75em;
+          height: 18.75em;
+        }
+        img {
+          width: 100%;
+        }
+        #popupGal1,
+        #popupGal3 {
+          padding: 5% 25%;
+          margin: 6% 0;
+          img {
+            width: 25em;
+            height: 31.25em;
+          }
+        }
+        #popupGal2,
+        #popupGal4,
+        #popupGal5,
+        #popupGal6 {
+          padding: 5% 22%;
+          margin: 6% 0;
+          img {
+            width: 29.375em;
+            height: 25em;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 4.375em;
+        span {
+          width: 1.563em;
+          height: 1.563em;
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN CONTACTO
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em;
+    .formContainer {
+      width: 21.875em;
+      padding-left: 4.375em;
+      .titulos {
+        i {
+          margin-bottom: 0.625rem;
+        }
+        h1 {
+          margin-bottom: 0.313em;
+          font-size: 1.875em;
+        }
+        h5 {
+          margin-bottom: 0.625em;
+          font-size: 1.25em;
+        }
+      }
+      .mb-4 {
+        .form-control {
+          font-size: 0.813em;
+        }
+        button {
+          width: auto;
+          font-size: 0.75em;
+          margin-right: 0.625em;
+          padding: 0.4em;
+        }
+        button:hover {
+          background-color: #fbc795;
+          border: 1px solid #fbc795;
+        }
+      }
+    }
+    .informContainer {
+      width: 21.875em;
+      .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 20px 0 0 20px;
+      }
+      .infoCaja {
+        top: 40px;
+        width: 92%;
+        height: 15em;
+        border-radius: 20px 0 0 20px;
+        padding: 1.25em 0 0 1.563em;
+        .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.875em;
+        }
+        div {
+          margin-bottom: 0.625em;
+          i {
+            padding: 0.125em 0 0 0.313em;
+          }
+          p {
+            font-size: 0.813em;
+            margin-left: 0.313em;
+            margin-bottom: 0.625em;
+          }
+        }
+      }
+    }
+  }
+
+  // PARÁMETROS DE LA SECCIÓN DONACIONES
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    h1 {
+      font-size: 1.875em;
+      margin-bottom: 0.625em;
+    }
+    h2 {
+      font-size: 1.25em;
+      margin-bottom: 0.938em;
+      padding: 0 7.5em;
+    }
+    .cardDonaciones {
+      height: 11.25em;
+      width: 25em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em;
+      h3 {
+        font-size: 1.25em;
+        margin: 0;
+      }
+    }
+    h4 {
+      font-size: 1.875em;
+      margin-bottom: 2.5em;
+    }
+  }
+
+  // PARÁMETROS DEL FOOTER
+  .footerContainer {
+    height: 7.5em;
+    width: 100%;
+    .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0.625em;
+      div {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 3.75em;
+          height: 1.875em;
+        }
+      }
+      a {
+        font-size: 0.813em;
+      }
+      i {
+        margin-right: 0.313em;
+      }
+    }
+    .infoFoot {
+      padding-right: 3.125em;
+      p {
+        font-size: 0.75em;
+        margin-bottom: 0.313em;
+      }
+    }
+  }
+}

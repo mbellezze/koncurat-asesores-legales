@@ -1,0 +1,1789 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+.navContainer .navbar {
+  background-color: #0bacd4;
+  padding: 0; }
+  .navContainer .navbar img {
+    margin-left: 1.25em; }
+  .navContainer .navbar .collapse {
+    height: 3.75em; }
+    .navContainer .navbar .collapse .navbar-nav {
+      height: 100%; }
+      .navContainer .navbar .collapse .navbar-nav .navEnlaces {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        font-size: 0.875em;
+        margin-right: 1.563em;
+        color: white !important;
+        width: 9.375rem; }
+      .navContainer .navbar .collapse .navbar-nav .color1:hover {
+        background-color: #3288aa; }
+      .navContainer .navbar .collapse .navbar-nav .color2:hover {
+        background-color: #f5b3cf; }
+      .navContainer .navbar .collapse .navbar-nav .color3:hover {
+        background-color: #99c774; }
+      .navContainer .navbar .collapse .navbar-nav .color4:hover {
+        background-color: #fbc795; }
+      .navContainer .navbar .collapse .navbar-nav .color5:hover {
+        background-color: #b293c4; }
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15.625em 0 8.75em 9.375em;
+  background-image: url("../../media/foto_grupal.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .homeContainer .homeContainer__div {
+    background-color: #ffffff;
+    width: 9.375em;
+    height: 4.5em;
+    padding: 0.625em;
+    margin-bottom: 0.625em; }
+    .homeContainer .homeContainer__div .homeContainer__img {
+      width: 8.438em;
+      height: 4.563em;
+      z-index: 1;
+      position: relative;
+      top: -22px; }
+  .homeContainer .homeContainer__title1 {
+    background-color: #ffffff;
+    width: 27.5em;
+    margin-bottom: 0.625em; }
+  .homeContainer .homeContainer__title2 {
+    background-color: #ffffff;
+    width: 22.188em;
+    margin-bottom: 0.625em; }
+  .homeContainer .homeContainer__title3 {
+    background-color: #ffffff;
+    width: 17.5em;
+    margin-bottom: 0.625em; }
+  .homeContainer .homeContainer__title4 {
+    background-color: #ffffff;
+    width: 31.25em;
+    margin-bottom: 0.625em; }
+  .homeContainer h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #10acd3;
+    margin: 0;
+    padding-left: 0.625rem; }
+
+.nosotrosContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4; }
+  .nosotrosContainer .nosotros__titulo {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; }
+    .nosotrosContainer .nosotros__titulo h1 {
+      font-family: "Rubik", sans-serif;
+      font-weight: bold;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 2.188rem; }
+    .nosotrosContainer .nosotros__titulo p {
+      font-family: "Karla", sans-serif;
+      font-size: 1.125em;
+      text-align: center;
+      padding: 0 11.875rem 0 11.875rem;
+      margin-bottom: 1.25em; }
+  .nosotrosContainer #carousel {
+    padding: 0 5em;
+    margin-bottom: 5em; }
+    .nosotrosContainer #carousel .cartasNosotros {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 3.125em; }
+      .nosotrosContainer #carousel .cartasNosotros .carta {
+        width: 15.625em;
+        height: 19.063em;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden; }
+        .nosotrosContainer #carousel .cartasNosotros .carta .card-body {
+          padding: 0; }
+          .nosotrosContainer #carousel .cartasNosotros .carta .card-body img {
+            border-radius: 20px 20px 0 0; }
+          .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 {
+            font-family: "Rubik", sans-serif;
+            font-weight: bold;
+            font-size: 0.875em;
+            background-color: #ffffff;
+            color: #3288aa;
+            padding: 1em;
+            line-height: 1em;
+            border-radius: 20px;
+            /* para superponer el epígrafe sobre la foto */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: calc(100% - 4.5em);
+            transition: all 0.6s ease-out; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 span {
+              font-family: "Karla", sans-serif;
+              font-size: 0.875rem; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 p {
+              font-family: "Karla", sans-serif;
+              font-size: 0.875rem;
+              display: block;
+              margin-top: 2em;
+              text-transform: none; }
+      .nosotrosContainer #carousel .cartasNosotros .carta:hover h5 {
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 0;
+        transition: all 0.6s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; }
+    .nosotrosContainer #carousel a {
+      width: 5em; }
+
+.talleresContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5em; }
+  .talleresContainer h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 2.188rem;
+    color: #0bacd4; }
+  .talleresContainer .cartasTalleres1,
+  .talleresContainer .cartasTalleres2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.875em; }
+    .talleresContainer .cartasTalleres1 .carta,
+    .talleresContainer .cartasTalleres2 .carta {
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      width: 14.375em;
+      height: 21.25em;
+      background-color: #0bacd4;
+      border-radius: 20px;
+      text-align: center;
+      flex-direction: row;
+      align-items: center; }
+      .talleresContainer .cartasTalleres1 .carta .card-body,
+      .talleresContainer .cartasTalleres2 .carta .card-body {
+        padding-top: 1.875em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; }
+        .talleresContainer .cartasTalleres1 .carta .card-body a,
+        .talleresContainer .cartasTalleres2 .carta .card-body a {
+          text-decoration: none;
+          color: #ffffff;
+          height: 100%; }
+        .talleresContainer .cartasTalleres1 .carta .card-body img,
+        .talleresContainer .cartasTalleres2 .carta .card-body img {
+          width: 4.375em;
+          height: 4.375em;
+          margin-bottom: 1.25em; }
+        .talleresContainer .cartasTalleres1 .carta .card-body h5,
+        .talleresContainer .cartasTalleres2 .carta .card-body h5 {
+          font-family: "Rubik", sans-serif;
+          font-weight: bold;
+          font-size: 1.25em;
+          margin-bottom: 1.25em; }
+        .talleresContainer .cartasTalleres1 .carta .card-body p,
+        .talleresContainer .cartasTalleres2 .carta .card-body p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em; }
+    .talleresContainer .cartasTalleres1 .color1:hover,
+    .talleresContainer .cartasTalleres2 .color1:hover {
+      background-color: #3288aa;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres1 .color2:hover,
+    .talleresContainer .cartasTalleres2 .color2:hover {
+      background-color: #f5b3cf;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres1 .color3:hover,
+    .talleresContainer .cartasTalleres2 .color3:hover {
+      background-color: #99c774;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres1 .color4:hover,
+    .talleresContainer .cartasTalleres2 .color4:hover {
+      background-color: #fbc795;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres1 .color5:hover,
+    .talleresContainer .cartasTalleres2 .color5:hover {
+      background-color: #b293c4;
+      border-radius: 20px; }
+  .talleresContainer .cartasTalleres3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+    padding: 0 16.25em 0 16.25em; }
+    .talleresContainer .cartasTalleres3 .carta {
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+      width: 14.375em;
+      height: 21.25em;
+      background-color: #0bacd4;
+      color: #ffffff;
+      border-radius: 20px;
+      text-align: center;
+      flex-direction: row;
+      align-items: center; }
+      .talleresContainer .cartasTalleres3 .carta .card-body {
+        padding-top: 1.875em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; }
+        .talleresContainer .cartasTalleres3 .carta .card-body a {
+          text-decoration: none;
+          color: #ffffff;
+          height: 100%; }
+        .talleresContainer .cartasTalleres3 .carta .card-body img {
+          width: 4.375em;
+          height: 4.375em;
+          margin-bottom: 1.25em; }
+        .talleresContainer .cartasTalleres3 .carta .card-body h5 {
+          font-family: "Rubik", sans-serif;
+          font-weight: bold;
+          font-size: 1.25em;
+          margin-bottom: 1.25em; }
+        .talleresContainer .cartasTalleres3 .carta .card-body p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em; }
+    .talleresContainer .cartasTalleres3 .color1:hover {
+      background-color: #3288aa;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres3 .color2:hover {
+      background-color: #f5b3cf;
+      border-radius: 20px; }
+    .talleresContainer .cartasTalleres3 .color3:hover {
+      background-color: #99c774;
+      border-radius: 20px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1; }
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1; }
+
+#popupBody {
+  text-align: center;
+  width: 40%;
+  height: 60%;
+  padding: 2% 6%;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #ffffff;
+  position: relative;
+  margin: 10% 30%;
+  background-color: #3288aa; }
+  #popupBody img {
+    width: 4.375em;
+    height: 4.375em;
+    margin-bottom: 0.625rem; }
+  #popupBody h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 1.25em; }
+  #popupBody p {
+    font-family: "Karla", sans-serif;
+    font-size: 0.875em; }
+
+#cerrar {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 1.875em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 200ms; }
+
+.redesContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4; }
+  .redesContainer h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.813rem;
+    color: #ffffff; }
+  .redesContainer .iconosRedes {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 21.875em;
+    margin-bottom: 5em; }
+    .redesContainer .iconosRedes .card {
+      border-radius: 20px;
+      height: 3.125em;
+      width: 15.625em; }
+      .redesContainer .iconosRedes .card .card-body {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .redesContainer .iconosRedes .card .card-body a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly; }
+          .redesContainer .iconosRedes .card .card-body a p {
+            font-family: "Rubik", sans-serif;
+            font-weight: bold;
+            font-size: 0.875em;
+            color: #0bacd4;
+            margin: 0; }
+    .redesContainer .iconosRedes .card:hover {
+      background-color: #99c774; }
+      .redesContainer .iconosRedes .card:hover .instaIcon {
+        background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .redesContainer .iconosRedes .card:hover .parrafoRedes {
+        color: #ffffff; }
+    .redesContainer .iconosRedes .instaIcon {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .redesContainer #carousel2 {
+    padding: 0 5em;
+    margin-bottom: 5em; }
+    .redesContainer #carousel2 .row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .redesContainer #carousel2 .row .gal1,
+      .redesContainer #carousel2 .row .gal3 {
+        display: flex;
+        align-items: center;
+        width: 15em;
+        height: 16.25em; }
+      .redesContainer #carousel2 .row .gal2,
+      .redesContainer #carousel2 .row .gal4,
+      .redesContainer #carousel2 .row .gal5,
+      .redesContainer #carousel2 .row .gal6 {
+        display: flex;
+        align-items: center;
+        width: 20.625em;
+        height: 20.625em; }
+      .redesContainer #carousel2 .row img {
+        width: 100%;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56); }
+      .redesContainer #carousel2 .row #popupGal1,
+      .redesContainer #carousel2 .row #popupGal3 {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding: 2% 34%;
+        margin: 4% 0; }
+        .redesContainer #carousel2 .row #popupGal1 img,
+        .redesContainer #carousel2 .row #popupGal3 img {
+          width: 26.25em;
+          height: 32.5em; }
+      .redesContainer #carousel2 .row #popupGal2,
+      .redesContainer #carousel2 .row #popupGal4,
+      .redesContainer #carousel2 .row #popupGal5,
+      .redesContainer #carousel2 .row #popupGal6 {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding: 2.5% 28%;
+        margin: 4% 0; }
+        .redesContainer #carousel2 .row #popupGal2 img,
+        .redesContainer #carousel2 .row #popupGal4 img,
+        .redesContainer #carousel2 .row #popupGal5 img,
+        .redesContainer #carousel2 .row #popupGal6 img {
+          width: 37.5em;
+          height: 30em; }
+
+.contactoContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 5em; }
+  .contactoContainer .formContainer {
+    width: 40.625em;
+    padding-left: 9.375em;
+    color: #0bacd4;
+    margin-bottom: 3.125em; }
+    .contactoContainer .formContainer .titulos i {
+      margin-bottom: 1.25rem; }
+    .contactoContainer .formContainer .titulos h1 {
+      margin-bottom: 0.938rem;
+      font-family: "Rubik", sans-serif;
+      font-weight: bold;
+      font-size: 2.5em; }
+    .contactoContainer .formContainer .titulos h5 {
+      margin-bottom: 1.875rem;
+      font-family: "Rubik", sans-serif;
+      font-size: 2.188em; }
+    .contactoContainer .formContainer .mb-4 {
+      display: flex;
+      justify-content: center; }
+      .contactoContainer .formContainer .mb-4 ::-moz-placeholder {
+        color: #0bacd4;
+        opacity: 1; }
+      .contactoContainer .formContainer .mb-4 .form-control {
+        border: 1px solid #0bacd4;
+        font-family: "Karla", sans-serif;
+        font-size: 0.875em; }
+      .contactoContainer .formContainer .mb-4 button {
+        background-color: #0bacd4;
+        border: 1px solid #0bacd4;
+        width: 6.25em;
+        font-family: "Rubik", sans-serif;
+        font-size: 0.875em;
+        font-weight: bold;
+        margin-right: 1.25em; }
+      .contactoContainer .formContainer .mb-4 button:hover {
+        background-color: #fbc795;
+        border: 1px solid #fbc795; }
+  .contactoContainer .informContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 34.375em;
+    position: relative; }
+    .contactoContainer .informContainer .cajaVacia {
+      z-index: 1;
+      position: absolute;
+      top: 60px;
+      width: 96%;
+      height: 20em;
+      background-color: #fbc795;
+      border-radius: 20px 0 0 20px; }
+    .contactoContainer .informContainer .infoCaja {
+      z-index: 2;
+      position: absolute;
+      width: 90%;
+      height: 20.625em;
+      background-color: #0bacd4;
+      color: #ffffff;
+      border-radius: 20px 0 0 20px;
+      padding: 1.25em 0 0 4.375em; }
+      .contactoContainer .informContainer .infoCaja .titulo {
+        margin-bottom: 1.875rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        font-size: 2.5em; }
+      .contactoContainer .informContainer .infoCaja div {
+        display: flex;
+        margin-bottom: 0.938em; }
+        .contactoContainer .informContainer .infoCaja div i {
+          padding: 0.25em 0 0 0.625em; }
+        .contactoContainer .informContainer .infoCaja div p {
+          font-family: "Karla", sans-serif;
+          font-size: 0.875em;
+          margin-left: 0.938em; }
+
+.donacionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 5em;
+  background-color: #0bacd4; }
+  .donacionContainer h1,
+  .donacionContainer h4 {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 0.625em;
+    color: #ffffff; }
+  .donacionContainer h4 {
+    margin-bottom: 4.375rem; }
+  .donacionContainer h2 {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.875em;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    padding: 0 15.625rem; }
+  .donacionContainer .cardDonaciones {
+    height: 15.625em;
+    width: 43.75em;
+    background-color: #b293c4;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56); }
+    .donacionContainer .cardDonaciones h3 {
+      font-family: "Rubik", sans-serif;
+      font-size: 1.875em;
+      margin: 0; }
+
+.footerContainer {
+  background-color: #3288aa;
+  height: 12.5em;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid white; }
+  .footerContainer .foot1 {
+    width: 43.75em;
+    display: flex;
+    justify-content: space-evenly; }
+    .footerContainer .foot1 div {
+      display: flex;
+      flex-direction: column; }
+    .footerContainer .foot1 a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "Karla", sans-serif;
+      font-size: 0.875em; }
+    .footerContainer .foot1 i {
+      color: #ffffff;
+      margin-right: 0.625em; }
+  .footerContainer .infoFoot {
+    padding-right: 3.75em; }
+    .footerContainer .infoFoot p {
+      font-family: "Karla", sans-serif;
+      font-size: 0.875em;
+      margin: 0; }
+
+@media screen and (max-width: 575px) {
+  .navContainer .navbar img {
+    margin: 0 0 0.438em 0.313em;
+    width: 2.5em;
+    height: 1.25em; }
+  .navContainer .navbar .collapse {
+    height: 100%; }
+    .navContainer .navbar .collapse .navbar-nav {
+      height: 100%; }
+      .navContainer .navbar .collapse .navbar-nav .navEnlaces {
+        justify-content: flex-start;
+        padding-left: 0.313em;
+        font-size: 0.75em;
+        width: 5.625rem; }
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_575.jpg");
+    height: 100%;
+    padding: 8.125em 0 3.75em 3.125em; }
+    .homeContainer .homeContainer__div {
+      width: 2.344em;
+      height: 1.125em;
+      padding: 0.156em;
+      margin-bottom: 0.156em; }
+      .homeContainer .homeContainer__div .homeContainer__img {
+        width: 2.109em;
+        height: 1.141em;
+        top: -10px; }
+    .homeContainer .homeContainer__title1 {
+      width: 10.313em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title2 {
+      width: 8.125em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title3 {
+      width: 6.563em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title4 {
+      width: 11.875em;
+      margin-bottom: 0.208em; }
+    .homeContainer h2 {
+      font-size: 0.938em;
+      padding-left: 0.208em; }
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .nosotrosContainer .nosotros__titulo h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em; }
+    .nosotrosContainer .nosotros__titulo p {
+      font-size: 0.813em;
+      padding: 0 2.5rem;
+      margin-bottom: 1.25em; }
+    .nosotrosContainer #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em; }
+      .nosotrosContainer #carousel .cartasNosotros {
+        margin-top: 1.25em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta {
+          width: 9.731em;
+          height: 11.875em;
+          border-radius: 10px; }
+          .nosotrosContainer #carousel .cartasNosotros .carta .card-body {
+            padding: 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body img {
+              border-radius: 10px 10px 0 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 {
+              font-size: 0.75em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 3.8em);
+              transition: all 0.6s ease-out; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 span {
+                font-size: 0.75rem; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 p {
+                font-size: 0.75rem;
+                margin-top: 1.2em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.9);
+          top: 0;
+          transition: all 0.6s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+      .nosotrosContainer #carousel a {
+        width: 4.375em; }
+        .nosotrosContainer #carousel a span {
+          width: 0.938em;
+          height: 0.938em; }
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .talleresContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em; }
+    .talleresContainer .cartasTalleres1,
+    .talleresContainer .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres1 .carta,
+      .talleresContainer .cartasTalleres2 .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres1 .carta .card-body,
+        .talleresContainer .cartasTalleres2 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body a,
+          .talleresContainer .cartasTalleres2 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body img,
+          .talleresContainer .cartasTalleres2 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body h5,
+          .talleresContainer .cartasTalleres2 .carta .card-body h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body p,
+          .talleresContainer .cartasTalleres2 .carta .card-body p {
+            font-size: 0.75em; }
+      .talleresContainer .cartasTalleres1 .color1:hover,
+      .talleresContainer .cartasTalleres2 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color2:hover,
+      .talleresContainer .cartasTalleres2 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color3:hover,
+      .talleresContainer .cartasTalleres2 .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color4:hover,
+      .talleresContainer .cartasTalleres2 .color4:hover {
+        background-color: #fbc795;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color5:hover,
+      .talleresContainer .cartasTalleres2 .color5:hover {
+        background-color: #b293c4;
+        border-radius: 10px; }
+    .talleresContainer .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres3 .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres3 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body p {
+            font-size: 0.75em; }
+      .talleresContainer .cartasTalleres3 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres3 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres3 .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px; }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1; }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1; }
+  #popupBody {
+    text-align: center;
+    width: 80%;
+    height: 55%;
+    padding: 4% 6%;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 20% 10%;
+    background-color: #3288aa; }
+    #popupBody img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.5em; }
+    #popupBody h5 {
+      font-size: 0.938em;
+      margin-bottom: 0.5em; }
+    #popupBody p {
+      font-size: 0.75em;
+      margin-bottom: 0.625em; }
+  #cerrar {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 0.938em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms; }
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .redesContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 1.25em; }
+    .redesContainer .iconosRedes {
+      padding: 0 0.625em;
+      margin-bottom: 1.25em;
+      display: flex;
+      flex-wrap: wrap; }
+      .redesContainer .iconosRedes .card {
+        border-radius: 20px;
+        height: 2.188em;
+        width: 11.875em;
+        margin-bottom: 0.938em; }
+        .redesContainer .iconosRedes .card .card-body a {
+          width: 100%;
+          height: 100%; }
+          .redesContainer .iconosRedes .card .card-body a .fa-2x {
+            font-size: 1.2em; }
+          .redesContainer .iconosRedes .card .card-body a p {
+            font-size: 0.75em;
+            margin: 0; }
+      .redesContainer .iconosRedes .card:hover {
+        background-color: #99c774; }
+        .redesContainer .iconosRedes .card:hover .instaIcon {
+          background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        .redesContainer .iconosRedes .card:hover .parrafoRedes {
+          color: #ffffff; }
+      .redesContainer .iconosRedes .instaIcon {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .redesContainer #carousel2 .row .gal1,
+    .redesContainer #carousel2 .row .gal3 {
+      width: 15em;
+      height: 16.25em; }
+    .redesContainer #carousel2 .row .gal2,
+    .redesContainer #carousel2 .row .gal4,
+    .redesContainer #carousel2 .row .gal5,
+    .redesContainer #carousel2 .row .gal6 {
+      width: 18.75em;
+      height: 12.5em; }
+    .redesContainer #carousel2 .row img {
+      width: 100%; }
+    .redesContainer #carousel2 .row #popupGal1,
+    .redesContainer #carousel2 .row #popupGal3 {
+      padding: 6% 8.5%;
+      margin: 11% 0; }
+      .redesContainer #carousel2 .row #popupGal1 img,
+      .redesContainer #carousel2 .row #popupGal3 img {
+        width: 18.75em;
+        height: 25em; }
+    .redesContainer #carousel2 .row #popupGal2,
+    .redesContainer #carousel2 .row #popupGal4,
+    .redesContainer #carousel2 .row #popupGal5,
+    .redesContainer #carousel2 .row #popupGal6 {
+      padding: 8% 7%;
+      margin: 11% 0; }
+      .redesContainer #carousel2 .row #popupGal2 img,
+      .redesContainer #carousel2 .row #popupGal4 img,
+      .redesContainer #carousel2 .row #popupGal5 img,
+      .redesContainer #carousel2 .row #popupGal6 img {
+        width: 20em;
+        height: 17.5em; }
+    .redesContainer #carousel2 .carousel-control-prev,
+    .redesContainer #carousel2 .carousel-control-next {
+      width: 4.375em; }
+      .redesContainer #carousel2 .carousel-control-prev span,
+      .redesContainer #carousel2 .carousel-control-next span {
+        width: 0.938em;
+        height: 0.938em; }
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em; }
+    .contactoContainer .formContainer {
+      width: 10.938em;
+      padding-left: 1.25em; }
+      .contactoContainer .formContainer .titulos i {
+        margin-bottom: 0.625em;
+        font-size: 1.5em; }
+      .contactoContainer .formContainer .titulos h1 {
+        margin-bottom: 0.313em;
+        font-size: 1.25em; }
+      .contactoContainer .formContainer .titulos h5 {
+        margin-bottom: 0.625em;
+        font-size: 0.875em; }
+      .contactoContainer .formContainer .mb-4 .form-control {
+        font-size: 0.75em; }
+      .contactoContainer .formContainer .mb-4 button {
+        width: 3.125rem;
+        font-size: 0.625em;
+        margin-right: 0.625em;
+        padding: 0.3em; }
+      .contactoContainer .formContainer .mb-4 button:hover {
+        background-color: #fbc795;
+        border: 1px solid #fbc795; }
+    .contactoContainer .informContainer {
+      width: 10.625em; }
+      .contactoContainer .informContainer .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 10px 0 0 10px; }
+      .contactoContainer .informContainer .infoCaja {
+        top: 27px;
+        width: 96%;
+        height: 13.125em;
+        border-radius: 10px 0 0 10px;
+        padding: 0.938em 0 0 0.625em; }
+        .contactoContainer .informContainer .infoCaja .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.25em; }
+        .contactoContainer .informContainer .infoCaja div {
+          margin-bottom: 0.313em; }
+          .contactoContainer .informContainer .infoCaja div i {
+            padding: 0.125rem 0 0 0.313rem;
+            font-size: 0.7em; }
+          .contactoContainer .informContainer .infoCaja div p {
+            font-size: 0.75em;
+            margin-left: 0.313em;
+            margin-bottom: 0.313em; }
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .donacionContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.625em; }
+    .donacionContainer h2 {
+      font-size: 0.938em;
+      margin-bottom: 0.938em;
+      padding: 0 2.5em; }
+    .donacionContainer .cardDonaciones {
+      height: 6.25em;
+      width: 15.625em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em; }
+      .donacionContainer .cardDonaciones h3 {
+        font-size: 0.75em;
+        margin: 0; }
+    .donacionContainer h4 {
+      font-size: 1.25em;
+      margin-bottom: 1.875em; }
+  .footerContainer {
+    height: 7.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .footerContainer .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.625em; }
+      .footerContainer .foot1 div {
+        display: flex;
+        flex-direction: column; }
+        .footerContainer .foot1 div img {
+          width: 2.5em;
+          height: 1.25em; }
+      .footerContainer .foot1 a {
+        font-size: 0.75em; }
+      .footerContainer .foot1 i {
+        font-size: 1.2em;
+        margin-right: 0.313em; }
+    .footerContainer .infoFoot {
+      padding-right: 0; }
+      .footerContainer .infoFoot p {
+        font-size: 0.75em;
+        margin: 0; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .navContainer .navbar img {
+    margin: 0 0 0.438em 0.313em;
+    width: 2.5em;
+    height: 1.25em; }
+  .navContainer .navbar .collapse {
+    height: 100%; }
+    .navContainer .navbar .collapse .navbar-nav {
+      height: 100%; }
+      .navContainer .navbar .collapse .navbar-nav .navEnlaces {
+        justify-content: flex-start;
+        padding-left: 0.313em;
+        font-size: 0.75em;
+        width: 5.625rem; }
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_575.jpg");
+    height: 100%;
+    padding: 8.125em 0 3.75em 3.125em; }
+    .homeContainer .homeContainer__div {
+      width: 2.344em;
+      height: 1.125em;
+      padding: 0.156em;
+      margin-bottom: 0.156em; }
+      .homeContainer .homeContainer__div .homeContainer__img {
+        width: 2.109em;
+        height: 1.141em;
+        top: -10px; }
+    .homeContainer .homeContainer__title1 {
+      width: 10.313em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title2 {
+      width: 8.125em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title3 {
+      width: 6.563em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title4 {
+      width: 11.875em;
+      margin-bottom: 0.208em; }
+    .homeContainer h2 {
+      font-size: 0.938em;
+      padding-left: 0.208em; }
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .nosotrosContainer .nosotros__titulo h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em; }
+    .nosotrosContainer .nosotros__titulo p {
+      font-size: 0.813em;
+      padding: 0 2.5rem;
+      margin-bottom: 1.25em; }
+    .nosotrosContainer #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em; }
+      .nosotrosContainer #carousel .cartasNosotros {
+        margin-top: 1.25em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta {
+          width: 9.731em;
+          height: 11.875em;
+          border-radius: 10px; }
+          .nosotrosContainer #carousel .cartasNosotros .carta .card-body {
+            padding: 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body img {
+              border-radius: 10px 10px 0 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 {
+              font-size: 0.75em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 3.8em);
+              transition: all 0.6s ease-out; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 span {
+                font-size: 0.75rem; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 p {
+                font-size: 0.75rem;
+                margin-top: 1.2em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.9);
+          top: 0;
+          transition: all 0.6s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+      .nosotrosContainer #carousel a {
+        width: 4.375em; }
+        .nosotrosContainer #carousel a span {
+          width: 0.938em;
+          height: 0.938em; }
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .talleresContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.729em; }
+    .talleresContainer .cartasTalleres1,
+    .talleresContainer .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres1 .carta,
+      .talleresContainer .cartasTalleres2 .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres1 .carta .card-body,
+        .talleresContainer .cartasTalleres2 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body a,
+          .talleresContainer .cartasTalleres2 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body img,
+          .talleresContainer .cartasTalleres2 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body h5,
+          .talleresContainer .cartasTalleres2 .carta .card-body h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body p,
+          .talleresContainer .cartasTalleres2 .carta .card-body p {
+            font-size: 0.75em; }
+      .talleresContainer .cartasTalleres1 .color1:hover,
+      .talleresContainer .cartasTalleres2 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color2:hover,
+      .talleresContainer .cartasTalleres2 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color3:hover,
+      .talleresContainer .cartasTalleres2 .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color4:hover,
+      .talleresContainer .cartasTalleres2 .color4:hover {
+        background-color: #fbc795;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres1 .color5:hover,
+      .talleresContainer .cartasTalleres2 .color5:hover {
+        background-color: #b293c4;
+        border-radius: 10px; }
+    .talleresContainer .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres3 .carta {
+        width: 10.769em;
+        height: 15.938em;
+        border-radius: 10px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres3 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body h5 {
+            font-size: 0.938em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body p {
+            font-size: 0.75em; }
+      .talleresContainer .cartasTalleres3 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres3 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 10px; }
+      .talleresContainer .cartasTalleres3 .color3:hover {
+        background-color: #99c774;
+        border-radius: 10px; }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1; }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1; }
+  #popupBody {
+    text-align: center;
+    width: 80%;
+    height: 55%;
+    padding: 4% 6%;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 20% 10%;
+    background-color: #3288aa; }
+    #popupBody img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.5em; }
+    #popupBody h5 {
+      font-size: 0.938em;
+      margin-bottom: 0.5em; }
+    #popupBody p {
+      font-size: 0.75em;
+      margin-bottom: 0.625em; }
+  #cerrar {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 0.938em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms; }
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .redesContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 1.25em; }
+    .redesContainer .iconosRedes {
+      padding: 0 0.625em;
+      margin-bottom: 1.25em;
+      display: flex;
+      flex-wrap: wrap; }
+      .redesContainer .iconosRedes .card {
+        border-radius: 20px;
+        height: 2.188em;
+        width: 11.875em;
+        margin-bottom: 0.938em; }
+        .redesContainer .iconosRedes .card .card-body a {
+          width: 100%;
+          height: 100%; }
+          .redesContainer .iconosRedes .card .card-body a .fa-2x {
+            font-size: 1.2em; }
+          .redesContainer .iconosRedes .card .card-body a p {
+            font-size: 0.75em;
+            margin: 0; }
+      .redesContainer .iconosRedes .card:hover {
+        background-color: #99c774; }
+        .redesContainer .iconosRedes .card:hover .instaIcon {
+          background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        .redesContainer .iconosRedes .card:hover .parrafoRedes {
+          color: #ffffff; }
+      .redesContainer .iconosRedes .instaIcon {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .redesContainer #carousel2 .row .gal1,
+    .redesContainer #carousel2 .row .gal3 {
+      width: 15em;
+      height: 16.25em; }
+    .redesContainer #carousel2 .row .gal2,
+    .redesContainer #carousel2 .row .gal4,
+    .redesContainer #carousel2 .row .gal5,
+    .redesContainer #carousel2 .row .gal6 {
+      width: 18.75em;
+      height: 12.5em; }
+    .redesContainer #carousel2 .row img {
+      width: 100%; }
+    .redesContainer #carousel2 .row #popupGal1,
+    .redesContainer #carousel2 .row #popupGal3 {
+      padding: 6% 8.5%;
+      margin: 11% 0; }
+      .redesContainer #carousel2 .row #popupGal1 img,
+      .redesContainer #carousel2 .row #popupGal3 img {
+        width: 18.75em;
+        height: 25em; }
+    .redesContainer #carousel2 .row #popupGal2,
+    .redesContainer #carousel2 .row #popupGal4,
+    .redesContainer #carousel2 .row #popupGal5,
+    .redesContainer #carousel2 .row #popupGal6 {
+      padding: 8% 7%;
+      margin: 11% 0; }
+      .redesContainer #carousel2 .row #popupGal2 img,
+      .redesContainer #carousel2 .row #popupGal4 img,
+      .redesContainer #carousel2 .row #popupGal5 img,
+      .redesContainer #carousel2 .row #popupGal6 img {
+        width: 20em;
+        height: 17.5em; }
+    .redesContainer #carousel2 .carousel-control-prev,
+    .redesContainer #carousel2 .carousel-control-next {
+      width: 4.375em; }
+      .redesContainer #carousel2 .carousel-control-prev span,
+      .redesContainer #carousel2 .carousel-control-next span {
+        width: 0.938em;
+        height: 0.938em; }
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em; }
+    .contactoContainer .formContainer {
+      width: 10.938em;
+      padding-left: 1.25em; }
+      .contactoContainer .formContainer .titulos i {
+        margin-bottom: 0.625em;
+        font-size: 1.5em; }
+      .contactoContainer .formContainer .titulos h1 {
+        margin-bottom: 0.313em;
+        font-size: 1.25em; }
+      .contactoContainer .formContainer .titulos h5 {
+        margin-bottom: 0.625em;
+        font-size: 0.875em; }
+      .contactoContainer .formContainer .mb-4 .form-control {
+        font-size: 0.75em; }
+      .contactoContainer .formContainer .mb-4 button {
+        width: 3.125rem;
+        font-size: 0.625em;
+        margin-right: 0.625em;
+        padding: 0.3em; }
+      .contactoContainer .formContainer .mb-4 button:hover {
+        background-color: #fbc795;
+        border: 1px solid #fbc795; }
+    .contactoContainer .informContainer {
+      width: 10.625em; }
+      .contactoContainer .informContainer .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 10px 0 0 10px; }
+      .contactoContainer .informContainer .infoCaja {
+        top: 27px;
+        width: 96%;
+        height: 13.125em;
+        border-radius: 10px 0 0 10px;
+        padding: 0.938em 0 0 0.625em; }
+        .contactoContainer .informContainer .infoCaja .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.25em; }
+        .contactoContainer .informContainer .infoCaja div {
+          margin-bottom: 0.313em; }
+          .contactoContainer .informContainer .infoCaja div i {
+            padding: 0.125rem 0 0 0.313rem;
+            font-size: 0.7em; }
+          .contactoContainer .informContainer .infoCaja div p {
+            font-size: 0.75em;
+            margin-left: 0.313em;
+            margin-bottom: 0.313em; }
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .donacionContainer h1 {
+      font-size: 1.25em;
+      margin-bottom: 0.625em; }
+    .donacionContainer h2 {
+      font-size: 0.938em;
+      margin-bottom: 0.938em;
+      padding: 0 2.5em; }
+    .donacionContainer .cardDonaciones {
+      height: 6.25em;
+      width: 15.625em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em; }
+      .donacionContainer .cardDonaciones h3 {
+        font-size: 0.75em;
+        margin: 0; }
+    .donacionContainer h4 {
+      font-size: 1.25em;
+      margin-bottom: 1.875em; }
+  .footerContainer {
+    height: 7.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .footerContainer .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0.625em; }
+      .footerContainer .foot1 div {
+        display: flex;
+        flex-direction: column; }
+        .footerContainer .foot1 div img {
+          width: 2.5em;
+          height: 1.25em; }
+      .footerContainer .foot1 a {
+        font-size: 0.75em; }
+      .footerContainer .foot1 i {
+        font-size: 1.2em;
+        margin-right: 0.313em; }
+    .footerContainer .infoFoot {
+      padding-right: 0; }
+      .footerContainer .infoFoot p {
+        font-size: 0.75em;
+        margin: 0; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navContainer .navbar img {
+    margin: 0 0 0.438em 0.313em;
+    width: 3.75rem;
+    height: 1.875rem; }
+  .navContainer .navbar .collapse {
+    height: 100%; }
+    .navContainer .navbar .collapse .navbar-nav {
+      height: 100%; }
+      .navContainer .navbar .collapse .navbar-nav .navEnlaces {
+        justify-content: flex-start;
+        padding-left: 0.313em;
+        font-size: 0.813em;
+        width: 7.813em; }
+  .homeContainer {
+    background-image: url("../../media/foto_grupal_mq_991.jpg");
+    height: 100%;
+    padding: 11.25em 0 2.5em 5.625em; }
+    .homeContainer .homeContainer__div {
+      width: 5.313em;
+      height: 2.625em;
+      padding: 0.156em;
+      margin-bottom: 0.156em; }
+      .homeContainer .homeContainer__div .homeContainer__img {
+        width: 5em;
+        height: 2.5em;
+        top: -7px; }
+    .homeContainer h2 {
+      font-size: 1.875em;
+      padding-left: 0.208rem; }
+    .homeContainer .homeContainer__title1 {
+      width: 20.313em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title2 {
+      width: 16.25em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title3 {
+      width: 12.813em;
+      margin-bottom: 0.208em; }
+    .homeContainer .homeContainer__title4 {
+      width: 23.125em;
+      margin-bottom: 0.208em; }
+  .nosotrosContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .nosotrosContainer .nosotros__titulo h1 {
+      font-size: 1.875em;
+      margin-bottom: 1.25rem; }
+    .nosotrosContainer .nosotros__titulo p {
+      font-size: 0.938em;
+      padding: 0 5.625em;
+      margin-bottom: 1.25em; }
+    .nosotrosContainer #carousel {
+      padding: 0 2.5em;
+      margin-bottom: 1.875em; }
+      .nosotrosContainer #carousel .cartasNosotros {
+        margin-top: 1.25em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta {
+          width: 12.813em;
+          height: 15.625em;
+          border-radius: 20px; }
+          .nosotrosContainer #carousel .cartasNosotros .carta .card-body {
+            padding: 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body img {
+              border-radius: 20px 20px 0 0; }
+            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 {
+              font-size: 0.813em;
+              padding: 0.7em 0.6em 0.5em 0.7em;
+              line-height: 1em;
+              border-radius: 10px;
+              /* para superponer el epígrafe sobre la foto */
+              width: 100%;
+              height: 100%;
+              top: calc(100% - 4em);
+              transition: all 0.6s ease-out; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 span {
+                font-size: 0.813rem; }
+              .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 p {
+                font-size: 0.813rem;
+                margin-top: 1.2em; }
+        .nosotrosContainer #carousel .cartasNosotros .carta:hover h5 {
+          background-color: rgba(255, 255, 255, 0.7);
+          top: 0;
+          transition: all 0.6s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+      .nosotrosContainer #carousel a {
+        width: 2.5em; }
+        .nosotrosContainer #carousel a span {
+          width: 1.563em;
+          height: 1.563em; }
+  .talleresContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .talleresContainer h1 {
+      font-size: 1.875em;
+      margin-bottom: 1.25rem; }
+    .talleresContainer .cartasTalleres1,
+    .talleresContainer .cartasTalleres2 {
+      margin-bottom: 0;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres1 .carta,
+      .talleresContainer .cartasTalleres2 .carta {
+        width: 12.25em;
+        height: 18.125em;
+        border-radius: 20px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres1 .carta .card-body,
+        .talleresContainer .cartasTalleres2 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body a,
+          .talleresContainer .cartasTalleres2 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres1 .carta .card-body img,
+          .talleresContainer .cartasTalleres2 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body h5,
+          .talleresContainer .cartasTalleres2 .carta .card-body h5 {
+            font-size: 1.094em;
+            margin-bottom: 0.5em; }
+          .talleresContainer .cartasTalleres1 .carta .card-body p,
+          .talleresContainer .cartasTalleres2 .carta .card-body p {
+            font-size: 0.813em; }
+      .talleresContainer .cartasTalleres1 .color1:hover,
+      .talleresContainer .cartasTalleres2 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres1 .color2:hover,
+      .talleresContainer .cartasTalleres2 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres1 .color3:hover,
+      .talleresContainer .cartasTalleres2 .color3:hover {
+        background-color: #99c774;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres1 .color4:hover,
+      .talleresContainer .cartasTalleres2 .color4:hover {
+        background-color: #fbc795;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres1 .color5:hover,
+      .talleresContainer .cartasTalleres2 .color5:hover {
+        background-color: #b293c4;
+        border-radius: 20px; }
+    .talleresContainer .cartasTalleres3 {
+      margin-bottom: 1.25em;
+      padding: 0 0.313em;
+      flex-wrap: wrap; }
+      .talleresContainer .cartasTalleres3 .carta {
+        width: 12.25em;
+        height: 18.125em;
+        border-radius: 20px;
+        margin-bottom: 0.938em; }
+        .talleresContainer .cartasTalleres3 .carta .card-body {
+          padding: 0.625em;
+          height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body a {
+            height: 100%; }
+          .talleresContainer .cartasTalleres3 .carta .card-body img {
+            width: 3.125em;
+            height: 3.125em;
+            margin-bottom: 0.625em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body h5 {
+            font-size: 1.094em;
+            margin-bottom: 0.625em; }
+          .talleresContainer .cartasTalleres3 .carta .card-body p {
+            font-size: 0.813em; }
+      .talleresContainer .cartasTalleres3 .color1:hover {
+        background-color: #3288aa;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres3 .color2:hover {
+        background-color: #f5b3cf;
+        border-radius: 20px; }
+      .talleresContainer .cartasTalleres3 .color3:hover {
+        background-color: #99c774;
+        border-radius: 20px; }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1; }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1; }
+  #popupBody {
+    text-align: center;
+    width: 50%;
+    height: 28%;
+    padding: 5% 6%;
+    border-radius: 20px;
+    color: #ffffff;
+    background: #ffffff;
+    position: relative;
+    margin: 10% 25%;
+    background-color: #3288aa; }
+    #popupBody img {
+      width: 3.125em;
+      height: 3.125em;
+      margin-bottom: 0.625em; }
+    #popupBody h2 {
+      font-size: 1.094em; }
+    #popupBody p {
+      font-size: 0.813em;
+      margin-bottom: 0.625em; }
+  #cerrar {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.063em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 200ms; }
+  .redesContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .redesContainer h1 {
+      font-size: 1.875em;
+      margin-bottom: 1.563em; }
+    .redesContainer .iconosRedes {
+      padding: 0 6.25em;
+      margin-bottom: 2.5em;
+      display: flex;
+      flex-wrap: wrap; }
+      .redesContainer .iconosRedes .card {
+        border-radius: 20px;
+        height: 2.5em;
+        width: 13.125em;
+        margin-bottom: 0.938em; }
+        .redesContainer .iconosRedes .card .card-body a {
+          width: 100%;
+          height: 100%; }
+          .redesContainer .iconosRedes .card .card-body a p {
+            font-size: 0.813em;
+            margin: 0; }
+      .redesContainer .iconosRedes .card:hover {
+        background-color: #99c774; }
+        .redesContainer .iconosRedes .card:hover .instaIcon {
+          background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        .redesContainer .iconosRedes .card:hover .parrafoRedes {
+          color: #ffffff; }
+      .redesContainer .iconosRedes .instaIcon {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .redesContainer #carousel2 .row .gal1,
+    .redesContainer #carousel2 .row .gal3 {
+      width: 15em;
+      height: 16.25em; }
+    .redesContainer #carousel2 .row .gal2,
+    .redesContainer #carousel2 .row .gal4,
+    .redesContainer #carousel2 .row .gal5,
+    .redesContainer #carousel2 .row .gal6 {
+      width: 18.75em;
+      height: 18.75em; }
+    .redesContainer #carousel2 .row img {
+      width: 100%; }
+    .redesContainer #carousel2 .row #popupGal1,
+    .redesContainer #carousel2 .row #popupGal3 {
+      padding: 5% 25%;
+      margin: 6% 0; }
+      .redesContainer #carousel2 .row #popupGal1 img,
+      .redesContainer #carousel2 .row #popupGal3 img {
+        width: 25em;
+        height: 31.25em; }
+    .redesContainer #carousel2 .row #popupGal2,
+    .redesContainer #carousel2 .row #popupGal4,
+    .redesContainer #carousel2 .row #popupGal5,
+    .redesContainer #carousel2 .row #popupGal6 {
+      padding: 5% 22%;
+      margin: 6% 0; }
+      .redesContainer #carousel2 .row #popupGal2 img,
+      .redesContainer #carousel2 .row #popupGal4 img,
+      .redesContainer #carousel2 .row #popupGal5 img,
+      .redesContainer #carousel2 .row #popupGal6 img {
+        width: 29.375em;
+        height: 25em; }
+    .redesContainer #carousel2 .carousel-control-prev,
+    .redesContainer #carousel2 .carousel-control-next {
+      width: 4.375em; }
+      .redesContainer #carousel2 .carousel-control-prev span,
+      .redesContainer #carousel2 .carousel-control-next span {
+        width: 1.563em;
+        height: 1.563em; }
+  .contactoContainer {
+    height: 100%;
+    padding-top: 3.125em;
+    margin-bottom: 0.625em; }
+    .contactoContainer .formContainer {
+      width: 21.875em;
+      padding-left: 4.375em; }
+      .contactoContainer .formContainer .titulos i {
+        margin-bottom: 0.625rem; }
+      .contactoContainer .formContainer .titulos h1 {
+        margin-bottom: 0.313em;
+        font-size: 1.875em; }
+      .contactoContainer .formContainer .titulos h5 {
+        margin-bottom: 0.625em;
+        font-size: 1.25em; }
+      .contactoContainer .formContainer .mb-4 .form-control {
+        font-size: 0.813em; }
+      .contactoContainer .formContainer .mb-4 button {
+        width: auto;
+        font-size: 0.75em;
+        margin-right: 0.625em;
+        padding: 0.4em; }
+      .contactoContainer .formContainer .mb-4 button:hover {
+        background-color: #fbc795;
+        border: 1px solid #fbc795; }
+    .contactoContainer .informContainer {
+      width: 21.875em; }
+      .contactoContainer .informContainer .cajaVacia {
+        top: 20px;
+        width: 100%;
+        height: 12.813em;
+        border-radius: 20px 0 0 20px; }
+      .contactoContainer .informContainer .infoCaja {
+        top: 40px;
+        width: 92%;
+        height: 15em;
+        border-radius: 20px 0 0 20px;
+        padding: 1.25em 0 0 1.563em; }
+        .contactoContainer .informContainer .infoCaja .titulo {
+          margin-bottom: 0.938rem;
+          font-size: 1.875em; }
+        .contactoContainer .informContainer .infoCaja div {
+          margin-bottom: 0.625em; }
+          .contactoContainer .informContainer .infoCaja div i {
+            padding: 0.125em 0 0 0.313em; }
+          .contactoContainer .informContainer .infoCaja div p {
+            font-size: 0.813em;
+            margin-left: 0.313em;
+            margin-bottom: 0.625em; }
+  .donacionContainer {
+    height: 100%;
+    padding-top: 3.125em; }
+    .donacionContainer h1 {
+      font-size: 1.875em;
+      margin-bottom: 0.625em; }
+    .donacionContainer h2 {
+      font-size: 1.25em;
+      margin-bottom: 0.938em;
+      padding: 0 7.5em; }
+    .donacionContainer .cardDonaciones {
+      height: 11.25em;
+      width: 25em;
+      border-radius: 20px;
+      padding: 0.438em;
+      margin-bottom: 1.25em; }
+      .donacionContainer .cardDonaciones h3 {
+        font-size: 1.25em;
+        margin: 0; }
+    .donacionContainer h4 {
+      font-size: 1.875em;
+      margin-bottom: 2.5em; }
+  .footerContainer {
+    height: 7.5em;
+    width: 100%; }
+    .footerContainer .foot1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0.625em; }
+      .footerContainer .foot1 div {
+        display: flex;
+        flex-direction: column; }
+        .footerContainer .foot1 div img {
+          width: 3.75em;
+          height: 1.875em; }
+      .footerContainer .foot1 a {
+        font-size: 0.813em; }
+      .footerContainer .foot1 i {
+        margin-right: 0.313em; }
+    .footerContainer .infoFoot {
+      padding-right: 3.125em; }
+      .footerContainer .infoFoot p {
+        font-size: 0.75em;
+        margin-bottom: 0.313em; } }
