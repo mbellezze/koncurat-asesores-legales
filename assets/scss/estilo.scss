@@ -29,7 +29,7 @@
           color: white !important;
           width: 9.375rem;
         }
-        .color1:hover {
+        /* .color1:hover {
           background-color: #3288aa;
         }
         .color2:hover {
@@ -43,7 +43,7 @@
         }
         .color5:hover {
           background-color: #b293c4;
-        }
+        } */
       }
     }
   }
@@ -54,52 +54,33 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 15.625em 0 8.75em 9.375em;
-  background-image: url("../../media/foto_grupal.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .homeContainer__div {
-    background-color: #ffffff;
-    width: 9.375em;
-    height: 4.5em;
-    padding: 0.625em;
-    margin-bottom: 0.625em;
-    .homeContainer__img {
-      width: 8.438em;
-      height: 4.563em;
-      z-index: 1;
-      position: relative;
-      top: -22px;
-    }
-  }
   .homeContainer__title1 {
-    background-color: #ffffff;
-    width: 27.5em;
+    /* background-color: #ffffff; */
+    width: 34.2em;
     margin-bottom: 0.625em;
   }
   .homeContainer__title2 {
-    background-color: #ffffff;
-    width: 22.188em;
+    /* background-color: #ffffff; */
+    width: 25em;
     margin-bottom: 0.625em;
   }
   .homeContainer__title3 {
-    background-color: #ffffff;
-    width: 17.5em;
+    /* background-color: #ffffff; */
+    width: 16.5em;
     margin-bottom: 0.625em;
   }
-  .homeContainer__title4 {
+  /* .homeContainer__title4 {
     background-color: #ffffff;
     width: 31.25em;
     margin-bottom: 0.625em;
-  }
+  } */
   h2 {
     font-family: "Rubik", sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em;
+    font-style: oblique;
     color: #10acd3;
     margin: 0;
-    padding-left: 0.625rem;
   }
 }
 
@@ -128,69 +109,6 @@
       text-align: center;
       padding: 0 11.875rem 0 11.875rem;
       margin-bottom: 1.25em;
-    }
-  }
-  #carousel {
-    padding: 0 5em;
-    margin-bottom: 5em;
-    .cartasNosotros {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 3.125em;
-      .carta {
-        width: 15.625em;
-        height: 19.063em;
-        border-radius: 20px;
-        position: relative;
-        overflow: hidden;
-        .card-body {
-          padding: 0;
-          img {
-            border-radius: 20px 20px 0 0;
-          }
-          h5 {
-            font-family: "Rubik", sans-serif;
-            font-weight: bold;
-            font-size: 0.875em;
-            background-color: #ffffff;
-            color: #3288aa;
-            padding: 1em;
-            line-height: 1em;
-            border-radius: 20px;
-
-            /* para superponer el epígrafe sobre la foto */
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: calc(100% - 4.5em);
-
-            transition: all 0.6s ease-out;
-            span {
-              font-family: "Karla", sans-serif;
-              font-size: 0.875rem;
-            }
-            p {
-              font-family: "Karla", sans-serif;
-              font-size: 0.875rem;
-              display: block;
-              margin-top: 2em;
-              text-transform: none;
-            }
-          }
-        }
-      }
-      .carta:hover h5 {
-        background-color: rgba(255, 255, 255, 0.7);
-        top: 0;
-        transition: all 0.6s ease;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-    }
-    a {
-      width: 5em;
     }
   }
 }
@@ -407,127 +325,6 @@
     margin-bottom: 2.813rem;
     color: #ffffff;
   }
-  .iconosRedes {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 21.875em;
-    margin-bottom: 5em;
-    .card {
-      border-radius: 20px;
-      height: 3.125em;
-      width: 15.625em;
-      .card-body {
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a {
-          width: 100%;
-          height: 100%;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-          p {
-            font-family: "Rubik", sans-serif;
-            font-weight: bold;
-            font-size: 0.875em;
-            color: #0bacd4;
-            margin: 0;
-          }
-        }
-      }
-    }
-    .card:hover {
-      background-color: #99c774;
-      .instaIcon {
-        background: radial-gradient(
-          circle at 30% 107%,
-          #ffffff 0%,
-          #ffffff 5%,
-          #ffffff 45%,
-          #ffffff 60%,
-          #ffffff 90%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .parrafoRedes {
-        color: #ffffff;
-      }
-    }
-    .instaIcon {
-      background: radial-gradient(
-        circle at 30% 107%,
-        #fdf497 0%,
-        #fdf497 5%,
-        #fd5949 45%,
-        #d6249f 60%,
-        #285aeb 90%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  #carousel2 {
-    padding: 0 5em;
-    margin-bottom: 5em;
-    .row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      .gal1,
-      .gal3 {
-        display: flex;
-        align-items: center;
-        width: 15em;
-        height: 16.25em;
-      }
-      .gal2,
-      .gal4,
-      .gal5,
-      .gal6 {
-        display: flex;
-        align-items: center;
-        width: 20.625em;
-        height: 20.625em;
-      }
-      img {
-        width: 100%;
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
-        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
-        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
-      }
-      #popupGal1,
-      #popupGal3 {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        padding: 2% 34%;
-        margin: 4% 0;
-        img {
-          width: 26.25em;
-          height: 32.5em;
-        }
-      }
-      #popupGal2,
-      #popupGal4,
-      #popupGal5,
-      #popupGal6 {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        padding: 2.5% 28%;
-        margin: 4% 0;
-        img {
-          width: 37.5em;
-          height: 30em;
-        }
-      }
-    }
-  }
 }
 
 // PARÁMETROS DE LA SECCIÓN CONTACTO
@@ -585,47 +382,7 @@
     }
   }
   .informContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 34.375em;
-    position: relative;
-    .cajaVacia {
-      z-index: 1;
-      position: absolute;
-      top: 60px;
-      width: 96%;
-      height: 20em;
-      background-color: #fbc795;
-      border-radius: 20px 0 0 20px;
-    }
     .infoCaja {
-      z-index: 2;
-      position: absolute;
-      width: 90%;
-      height: 20.625em;
-      background-color: #0bacd4;
-      color: #ffffff;
-      border-radius: 20px 0 0 20px;
-      padding: 1.25em 0 0 4.375em;
-      .titulo {
-        margin-bottom: 1.875rem;
-        font-family: "Rubik", sans-serif;
-        font-weight: bold;
-        font-size: 2.5em;
-      }
-      div {
-        display: flex;
-        margin-bottom: 0.938em;
-        i {
-          padding: 0.25em 0 0 0.625em;
-        }
-        p {
-          font-family: "Karla", sans-serif;
-          font-size: 0.875em;
-          margin-left: 0.938em;
-        }
-      }
     }
   }
 }

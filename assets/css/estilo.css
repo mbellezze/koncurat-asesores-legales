@@ -13,7 +13,22 @@
   .navContainer .navbar .collapse {
     height: 3.75em; }
     .navContainer .navbar .collapse .navbar-nav {
-      height: 100%; }
+      height: 100%;
+      /* .color1:hover {
+          background-color: #3288aa;
+        }
+        .color2:hover {
+          background-color: #f5b3cf;
+        }
+        .color3:hover {
+          background-color: #99c774;
+        }
+        .color4:hover {
+          background-color: #fbc795;
+        }
+        .color5:hover {
+          background-color: #b293c4;
+        } */ }
       .navContainer .navbar .collapse .navbar-nav .navEnlaces {
         display: flex;
         justify-content: center;
@@ -24,61 +39,35 @@
         margin-right: 1.563em;
         color: white !important;
         width: 9.375rem; }
-      .navContainer .navbar .collapse .navbar-nav .color1:hover {
-        background-color: #3288aa; }
-      .navContainer .navbar .collapse .navbar-nav .color2:hover {
-        background-color: #f5b3cf; }
-      .navContainer .navbar .collapse .navbar-nav .color3:hover {
-        background-color: #99c774; }
-      .navContainer .navbar .collapse .navbar-nav .color4:hover {
-        background-color: #fbc795; }
-      .navContainer .navbar .collapse .navbar-nav .color5:hover {
-        background-color: #b293c4; }
 
 .homeContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 15.625em 0 8.75em 9.375em;
-  background-image: url("../../media/foto_grupal.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .homeContainer .homeContainer__div {
-    background-color: #ffffff;
-    width: 9.375em;
-    height: 4.5em;
-    padding: 0.625em;
-    margin-bottom: 0.625em; }
-    .homeContainer .homeContainer__div .homeContainer__img {
-      width: 8.438em;
-      height: 4.563em;
-      z-index: 1;
-      position: relative;
-      top: -22px; }
-  .homeContainer .homeContainer__title1 {
-    background-color: #ffffff;
-    width: 27.5em;
-    margin-bottom: 0.625em; }
-  .homeContainer .homeContainer__title2 {
-    background-color: #ffffff;
-    width: 22.188em;
-    margin-bottom: 0.625em; }
-  .homeContainer .homeContainer__title3 {
-    background-color: #ffffff;
-    width: 17.5em;
-    margin-bottom: 0.625em; }
-  .homeContainer .homeContainer__title4 {
+  /* .homeContainer__title4 {
     background-color: #ffffff;
     width: 31.25em;
+    margin-bottom: 0.625em;
+  } */ }
+  .homeContainer .homeContainer__title1 {
+    /* background-color: #ffffff; */
+    width: 34.2em;
+    margin-bottom: 0.625em; }
+  .homeContainer .homeContainer__title2 {
+    /* background-color: #ffffff; */
+    width: 25em;
+    margin-bottom: 0.625em; }
+  .homeContainer .homeContainer__title3 {
+    /* background-color: #ffffff; */
+    width: 16.5em;
     margin-bottom: 0.625em; }
   .homeContainer h2 {
     font-family: "Rubik", sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em;
+    font-style: oblique;
     color: #10acd3;
-    margin: 0;
-    padding-left: 0.625rem; }
+    margin: 0; }
 
 .nosotrosContainer {
   display: flex;
@@ -103,56 +92,6 @@
       text-align: center;
       padding: 0 11.875rem 0 11.875rem;
       margin-bottom: 1.25em; }
-  .nosotrosContainer #carousel {
-    padding: 0 5em;
-    margin-bottom: 5em; }
-    .nosotrosContainer #carousel .cartasNosotros {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 3.125em; }
-      .nosotrosContainer #carousel .cartasNosotros .carta {
-        width: 15.625em;
-        height: 19.063em;
-        border-radius: 20px;
-        position: relative;
-        overflow: hidden; }
-        .nosotrosContainer #carousel .cartasNosotros .carta .card-body {
-          padding: 0; }
-          .nosotrosContainer #carousel .cartasNosotros .carta .card-body img {
-            border-radius: 20px 20px 0 0; }
-          .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 {
-            font-family: "Rubik", sans-serif;
-            font-weight: bold;
-            font-size: 0.875em;
-            background-color: #ffffff;
-            color: #3288aa;
-            padding: 1em;
-            line-height: 1em;
-            border-radius: 20px;
-            /* para superponer el epígrafe sobre la foto */
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: calc(100% - 4.5em);
-            transition: all 0.6s ease-out; }
-            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 span {
-              font-family: "Karla", sans-serif;
-              font-size: 0.875rem; }
-            .nosotrosContainer #carousel .cartasNosotros .carta .card-body h5 p {
-              font-family: "Karla", sans-serif;
-              font-size: 0.875rem;
-              display: block;
-              margin-top: 2em;
-              text-transform: none; }
-      .nosotrosContainer #carousel .cartasNosotros .carta:hover h5 {
-        background-color: rgba(255, 255, 255, 0.7);
-        top: 0;
-        transition: all 0.6s ease;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end; }
-    .nosotrosContainer #carousel a {
-      width: 5em; }
 
 .talleresContainer {
   display: flex;
@@ -345,99 +284,6 @@
     text-align: center;
     margin-bottom: 2.813rem;
     color: #ffffff; }
-  .redesContainer .iconosRedes {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 21.875em;
-    margin-bottom: 5em; }
-    .redesContainer .iconosRedes .card {
-      border-radius: 20px;
-      height: 3.125em;
-      width: 15.625em; }
-      .redesContainer .iconosRedes .card .card-body {
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .redesContainer .iconosRedes .card .card-body a {
-          width: 100%;
-          height: 100%;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly; }
-          .redesContainer .iconosRedes .card .card-body a p {
-            font-family: "Rubik", sans-serif;
-            font-weight: bold;
-            font-size: 0.875em;
-            color: #0bacd4;
-            margin: 0; }
-    .redesContainer .iconosRedes .card:hover {
-      background-color: #99c774; }
-      .redesContainer .iconosRedes .card:hover .instaIcon {
-        background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent; }
-      .redesContainer .iconosRedes .card:hover .parrafoRedes {
-        color: #ffffff; }
-    .redesContainer .iconosRedes .instaIcon {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent; }
-  .redesContainer #carousel2 {
-    padding: 0 5em;
-    margin-bottom: 5em; }
-    .redesContainer #carousel2 .row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
-      .redesContainer #carousel2 .row .gal1,
-      .redesContainer #carousel2 .row .gal3 {
-        display: flex;
-        align-items: center;
-        width: 15em;
-        height: 16.25em; }
-      .redesContainer #carousel2 .row .gal2,
-      .redesContainer #carousel2 .row .gal4,
-      .redesContainer #carousel2 .row .gal5,
-      .redesContainer #carousel2 .row .gal6 {
-        display: flex;
-        align-items: center;
-        width: 20.625em;
-        height: 20.625em; }
-      .redesContainer #carousel2 .row img {
-        width: 100%;
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
-        -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56);
-        box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.56); }
-      .redesContainer #carousel2 .row #popupGal1,
-      .redesContainer #carousel2 .row #popupGal3 {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        padding: 2% 34%;
-        margin: 4% 0; }
-        .redesContainer #carousel2 .row #popupGal1 img,
-        .redesContainer #carousel2 .row #popupGal3 img {
-          width: 26.25em;
-          height: 32.5em; }
-      .redesContainer #carousel2 .row #popupGal2,
-      .redesContainer #carousel2 .row #popupGal4,
-      .redesContainer #carousel2 .row #popupGal5,
-      .redesContainer #carousel2 .row #popupGal6 {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        padding: 2.5% 28%;
-        margin: 4% 0; }
-        .redesContainer #carousel2 .row #popupGal2 img,
-        .redesContainer #carousel2 .row #popupGal4 img,
-        .redesContainer #carousel2 .row #popupGal5 img,
-        .redesContainer #carousel2 .row #popupGal6 img {
-          width: 37.5em;
-          height: 30em; }
 
 .contactoContainer {
   display: flex;
@@ -481,43 +327,6 @@
       .contactoContainer .formContainer .mb-4 button:hover {
         background-color: #fbc795;
         border: 1px solid #fbc795; }
-  .contactoContainer .informContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 34.375em;
-    position: relative; }
-    .contactoContainer .informContainer .cajaVacia {
-      z-index: 1;
-      position: absolute;
-      top: 60px;
-      width: 96%;
-      height: 20em;
-      background-color: #fbc795;
-      border-radius: 20px 0 0 20px; }
-    .contactoContainer .informContainer .infoCaja {
-      z-index: 2;
-      position: absolute;
-      width: 90%;
-      height: 20.625em;
-      background-color: #0bacd4;
-      color: #ffffff;
-      border-radius: 20px 0 0 20px;
-      padding: 1.25em 0 0 4.375em; }
-      .contactoContainer .informContainer .infoCaja .titulo {
-        margin-bottom: 1.875rem;
-        font-family: "Rubik", sans-serif;
-        font-weight: bold;
-        font-size: 2.5em; }
-      .contactoContainer .informContainer .infoCaja div {
-        display: flex;
-        margin-bottom: 0.938em; }
-        .contactoContainer .informContainer .infoCaja div i {
-          padding: 0.25em 0 0 0.625em; }
-        .contactoContainer .informContainer .infoCaja div p {
-          font-family: "Karla", sans-serif;
-          font-size: 0.875em;
-          margin-left: 0.938em; }
 
 .donacionContainer {
   display: flex;
